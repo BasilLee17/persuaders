@@ -1,0 +1,300 @@
+.App {
+  text-align: center;
+  background-color: white;
+}
+
+#intro {
+  position: absolute;
+  width: 1100px;
+}
+
+#intro-text {
+  text-align: center;
+  font-size: 28px;
+  width: 700px;
+  height: 250px;
+  border-radius: 8px;
+  border: white 5px solid;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 60px;
+  left: 175px;
+  z-index: 1000;
+  padding: 25px;
+}
+
+#reminder {
+  text-align: center;
+  font-size: 25px;
+  width: 900px;
+  height: auto;
+  border-radius: 8px;
+  border: white 5px solid;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 10px;
+  left: 95px;
+  padding: 5px;
+  z-index: 2;
+}
+
+.start-next {
+  position: absolute;
+  top: 700px;
+  left: 820px;
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.center {
+  position: absolute;
+  /* left: 50%; */
+  top: 380px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 550px;
+  width: 1000px;
+  height: 600px;
+  text-align: center;
+}
+
+#background-img {
+  text-align: left;
+  width: 1100px;
+  position: absolute;
+}
+
+.storage {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  display: block;
+}
+
+.ingredient {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  display: block;
+}
+
+.inventory {
+  border: 1px solid black;
+  background-color: white;
+  height: 80px;
+  width: 80px;
+}
+
+.inventory-container {
+  display: flex;
+  position: absolute;
+  top: 629px;
+  left: 1px;
+}
+
+.cooking-inventory-container {
+  display: flex;
+  position: absolute;
+  top: 670px;
+  left: 10px;
+}
+
+.cauldron {
+  left: 618px;
+  top: 273px;
+  position: absolute;
+}
+
+#cauldron-img {
+  width: 185px;
+}
+
+.cauldron-cook {
+  width: 400px;
+  height: 200px;
+  border-radius: 8px;
+  border: white 5px solid;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: 10px;
+  height: 750px;
+  width: 1070px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.lightup img:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}
+
+.cooking-positions {
+  display: flex;
+  position: absolute;
+  width: 35%;
+}
+
+.inspector {
+  z-index: 100;
+  padding: 40px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: white 5px solid;
+  border-radius: 8px;
+}
+
+.cook-button {
+  position: absolute;
+  left: 800px;
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.inspector button {
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.inspector p {
+  font-size: 24px;
+}
+
+.inspector-img {
+  height: 350px;
+}
+
+#recipe {
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: white 5px solid;
+  border-radius: 8px;
+}
+
+.recipe-container {
+  text-align: center;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: white 5px solid;
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute;
+  width: 1000px;
+  height: 90vh;
+  left: 25px;
+  z-index: 100;
+}
+
+.recipe-container button {
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+button {
+  margin: 10px;
+}
+
+#cook-inventory {
+  margin: 0px;
+  padding: 0px;
+}
+
+.character {
+  position: absolute;
+  width: 150px;
+  top: 120px;
+  left: 320px;
+  z-index: 10;
+}
+
+.popup-character {
+  z-index: 101;
+  width: 300px;
+  top: 220px;
+  left: 620px;
+}
+
+.narrative {
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: white 5px solid;
+  padding: 20px;
+  border-radius: 8px;
+  bottom: 100px;
+  text-align: center;
+  width: 1000px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 550px;
+  font-size: 24px;
+}
+
+.narrative button {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.overlay {
+  width: 1100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  position: absolute;
+  height: 782.217px;
+}
+
+.inventory-item {
+  width: 75px;
+  height: 75px;
+}
+
+.img-container {
+  display: flex;
+  position: absolute;
+}
+
+.img-container button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+}
+
+.ingredient img:hover {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  cursor: pointer;
+}
+
+.storage img:hover {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  cursor: pointer;
+}
+
+.inventory-item:hover {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  cursor: pointer;
+}
+
+#cook-inventory img:hover {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  cursor: pointer;
+}
+
+canvas {
+  z-index: 102 !important;
+}
